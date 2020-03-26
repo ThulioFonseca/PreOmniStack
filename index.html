@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- Comentário -->
+
+<html> <!--Tag HTML-->
+
+    <head><!-- Tag Head -> Responsável por receber configurações da página-->
+        <meta charset="UTF-8">        
+        <title>Casa Criativa</title>
+
+        <style>
+
+            body{
+
+                background: #e5e5e5;
+                color: #24282b;
+                text-align: center;
+            }
+
+            button{
+
+                border: none;
+                background: none;
+                color: #ff5e84;
+            }
+
+            button.fat{
+                color: white;
+                background: #ff5e84;
+            }
+
+            .hide{
+
+                display: none;
+            }
+
+            #footer a{
+
+                text-decoration: none;
+                color: #24282b;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Casa Criativa</h1>
+
+        <img src="Casa Criativa.png" alt="Imagem da Logomarca">
+
+        <p>
+
+                Em meio à pandemia do novo coronavírus pelo mundo,
+            uma das grandes dúvidas está na diferença entre quarentena e isolamento. 
+        
+        </p> 
+        
+        <p>     De acordo com a Portaria <strong>356/3020 </strong> do Ministério da Saúde, 
+            a quarentena tem como objetivo garantir a manutenção dos serviços de saúde
+            em local certo ou determinado.
+        </p>
+
+        <button>+ Adicionar Idéia</button>
+        <button class="fat">Ver idéias</button>
+
+        <p id="footer">Com ❤ <a href="https://www.google.com.br">Google</a> </p>
+
+        <script>
+
+            document
+                .querySelector("button.fat")
+                .addEventListener("click", function(){
+
+                    document
+                        .querySelector("#footer")
+                        .classList
+                        .toggle("hide")
+                })
+                
+
+        </script>         
+    </body>
+
+
+</html>
