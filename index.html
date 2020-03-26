@@ -8,80 +8,109 @@
         <meta charset="UTF-8">        
         <title>Casa Criativa</title>
 
-        <style>
 
-            body{
-
-                background: #e5e5e5;
-                color: #24282b;
-                text-align: center;
-            }
-
-            button{
-
-                border: none;
-                background: none;
-                color: #ff5e84;
-            }
-
-            button.fat{
-                color: white;
-                background: #ff5e84;
-            }
-
-            .hide{
-
-                display: none;
-            }
-
-            #footer a{
-
-                text-decoration: none;
-                color: #24282b;
-            }
-
-
-        </style>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
 
     </head>
 
     <body>
 
-        <h1>Casa Criativa</h1>
+        <div id="container">
 
-        <img src="Casa Criativa.png" alt="Imagem da Logomarca">
-
-        <p>
-
-                Em meio à pandemia do novo coronavírus pelo mundo,
-            uma das grandes dúvidas está na diferença entre quarentena e isolamento. 
-        
-        </p> 
-        
-        <p>     De acordo com a Portaria <strong>356/3020 </strong> do Ministério da Saúde, 
-            a quarentena tem como objetivo garantir a manutenção dos serviços de saúde
-            em local certo ou determinado.
-        </p>
-
-        <button>+ Adicionar Idéia</button>
-        <button class="fat">Ver idéias</button>
-
-        <p id="footer">Com ❤ <a href="https://www.google.com.br">Google</a> </p>
-
-        <script>
-
-            document
-                .querySelector("button.fat")
-                .addEventListener("click", function(){
-
-                    document
-                        .querySelector("#footer")
-                        .classList
-                        .toggle("hide")
-                })
+            <section id="intro">
                 
+                        <header>
 
-        </script>         
+                            <img src="Casa Criativa.png" alt="Imagem da Logomarca">
+
+                        </header>
+
+                        <main>
+                            <p>
+
+                                Em meio à pandemia do novo coronavírus pelo mundo,
+                                uma das grandes dúvidas está na diferença entre quarentena e isolamento. 
+                            </p>         
+                                       
+                            <p>  
+                                   De acordo com a Portaria <strong>356/3020 </strong> do Ministério da Saúde, 
+                                a quarentena tem como objetivo garantir a manutenção dos serviços de saúde
+                                em local certo ou determinado.
+                            </p>    
+
+
+                        </main>
+
+                        <section id="buttons">
+
+                            <button>+ Adicionar Idéia</button>
+                            <button class="fat">Ver idéias</button>
+
+                        </section>
+                        
+                        <footer id="footer"> Com ❤ <a href="https://www.google.com.br">Google</a> 
+
+                        </footer>                    
+                        
+
+                
+                        <script src="script.js"></script>
+
+
+            </section>
+
+            <section id="last-ideias">
+
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" 
+                    alt="Curso de Programação">
+                    
+                    <div class="content">
+                        <h3>Curso de Programação</h3>
+                        <p>Estudo</p>
+                        <div class="description">
+                            Em um dia ensolarado, tarde da manhã, quando a lua cheia era minguante, tudo era nada diferente do igual. A temperatura alta congelava o vento, que de desmotivado, motivava-se a soprar sem se por em movimento.
+                        </div>
+                        <a href="#"> Ir para a Idéia</a>
+                    </div>
+                </div>
+
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" 
+                    alt="Exercícios">
+                    
+                    <div class="content">
+                        <h3>Exercícios Físicos</h3>
+                        <p>Saúde</p>
+                        <div class="description">
+                            Em um dia ensolarado, tarde da manhã, quando a lua cheia era minguante, tudo era nada diferente do igual. A temperatura alta congelava o vento, que de desmotivado, motivava-se a soprar sem se por em movimento.
+                        </div>
+                        <a href="#"> Ir para a Idéia</a>
+                    </div>
+                </div>
+
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" 
+                    alt="Meditação">
+                    
+                    <div class="content">
+                        <h3>Meditação</h3>
+                        <p>Mentalidade</p>
+                        <div class="description">
+                            Em um dia ensolarado, tarde da manhã, quando a lua cheia era minguante, tudo era nada diferente do igual. A temperatura alta congelava o vento, que de desmotivado, motivava-se a soprar sem se por em movimento.
+                        </div>
+                        <a href="#"> Ir para a Idéia</a>
+                    </div>
+                </div> 
+
+
+            </section>
+
+
+        </div>
+
+        
     </body>
 
 

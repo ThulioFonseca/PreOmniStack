@@ -1,0 +1,159 @@
+
+body{
+
+    background: #e5e5e5;
+    color: #24282b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container{
+
+    width: 90%;
+    max-width: 980px;
+    margin: 64px auto;
+    display: flex;
+    
+}
+
+p, .description {
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+
+}
+
+.description{
+    margin-bottom: 20px;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: #ff5e84;
+    font-weight: bold;
+}
+
+
+ a:hover{
+
+    text-decoration: underline;
+    color: #ff5e84;
+
+ }
+
+#intro{
+
+    width: 300px;
+}
+
+#buttons{
+
+    
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-evenly;
+}
+
+
+button{
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    color: #ff5e84;
+    font-weight: bold;
+}
+
+button:hover{
+
+    text-decoration: underline;
+}
+
+button.fat{
+    color: white;
+    background: #ff5e84;
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgb(255, 0, 92,0.26);
+}
+
+button.fat:hover{
+
+    text-decoration: none;
+}
+
+.hide{
+
+    display: none;
+}
+
+main{
+
+    
+    margin: 32px 0;
+    text-align: justify;
+
+}
+
+footer {
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400 ;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #777777;
+    
+}
+
+footer a{
+
+    opacity: 0.8;
+    
+}
+
+footer a:hover {
+    font-weight: bold;
+    
+}
+
+#last-ideias {
+
+     margin-left: 32px;
+
+}
+
+.idea {
+
+    display: flex;
+    margin-bottom: 32px;
+   /* height: 100px;
+    margin-left: 96px;*/
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px -8px #000;
+    
+
+
+}
+.idea img {
+
+    width: 60px;
+    height: 60px;
+    margin-right: 32px;
+}
+
+.idea h3 {
+
+margin: 0;
+
+}
