@@ -4,6 +4,7 @@ body{
     background: #e5e5e5;
     color: #24282b;
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
 
 #container{
@@ -127,7 +128,8 @@ footer a:hover {
 
 #last-ideias {
 
-     margin-left: 32px;
+     margin-left: 64px;
+    
 
 }
 
@@ -157,3 +159,149 @@ footer a:hover {
 margin: 0;
 
 }
+
+/* --------   MODAL -----------*/
+
+#modal {
+
+    background: #ff5e84;
+    position: absolute;
+
+    top: 0;
+   
+    width: 100%;
+    height: 155%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    transition: 400ms;
+}
+
+#modal .content{
+
+    color: white;
+    margin-top: 128px;
+
+}
+
+#modal .content h1{
+
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+#modal form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+
+    grid-column: span 2;
+
+}
+
+
+input{
+
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+
+    border-radius: 6px;
+
+    border: 1px solid rgba(116, 5, 56, 0.8);
+
+    outline: none;
+    font-size: 16px;
+}
+
+form textarea {
+
+
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+
+    border-radius: 6px;
+
+    border: 1px solid rgba(116, 5, 56, 0.8);
+
+    outline: none;
+    font-size: 16px;
+
+}
+
+form label {
+
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+form a {
+
+    width: 150px;
+    height: 40px;
+    background: #ffffff22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 400ms;
+
+}
+
+form a:hover {
+
+    cursor: pointer;
+    text-decoration: none;
+    background: #0984e3;
+    color: white;
+
+}
+
+form button {
+
+    background: white;
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+
+}
+
+form button:hover {
+
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+#modal.hide{
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
